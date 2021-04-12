@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="{username}" path="/v2/user/{username}" id="98ae12a7-cccc-4a94-a9c8-b30c637f96f9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="98ae12a7-cccc-4a94-a9c8-b30c637f96f9fileName">%7Busername%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>username</con:name>
+      <con:value>username</con:value>
+      <con:style>TEMPLATE</con:style>
+      <con:default>username</con:default>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="Method 1" id="fe749bb4-8c7e-4ae6-a2d8-89ccd089dcf7" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:sj="https://petstore.swagger.io/v2/user/SJ">sj:Response</con:element>
+    </con:representation>
+    <con:representation type="FAULT">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:element xmlns:sj="https://petstore.swagger.io/v2/user/SJ">sj:Fault</con:element>
+    </con:representation>
+    <con:request name="Get_User" id="d95e8acb-42f3-4879-b7c2-356c5635e6fc" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://petstore.swagger.io</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="username" value="username"/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+  <con:method name="Method 2" id="c5eac68b-3e0c-4a7b-bcc3-72a5d838fc73" method="PUT">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:sj="https://petstore.swagger.io/v2/user/SJ">sj:Response</con:element>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Put_User" id="dea3f57f-7ba6-47bc-9559-a9cfdb888418" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://petstore.swagger.io</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="username" value="username"/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+  <con:method name="Method 3" id="009dec01-56e2-407f-ae3a-93a590aae416" method="DELETE">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Delete_User" id="77f9b54f-da20-4804-a47e-d57c718eba4a" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://petstore.swagger.io</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

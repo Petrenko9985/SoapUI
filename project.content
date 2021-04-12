@@ -1,0 +1,6 @@
+https%3A%2F%2Fpetstore.swagger.io\%7Busername%7D.xml
+https%3A%2F%2Fpetstore.swagger.io\login.xml
+https%3A%2F%2Fpetstore.swagger.io\logout.xml
+https%3A%2F%2Fpetstore.swagger.io\user.xml
+https%3A%2F%2Fpetstore.swagger.io-Test-Suite\https%3A%2F%2Fpetstore.swagger.io-Test-Case-1.xml
+Test-Suite-1\Add_User.xml
